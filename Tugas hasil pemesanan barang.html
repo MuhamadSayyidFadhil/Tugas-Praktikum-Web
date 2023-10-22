@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>hasil pemesanan barang</title>
+        <style>
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        h2{text-align: center;
+        }
+        
+      .gambar-kiri {
+      float: left;
+      margin-right: 30px;
+    }
+    input[type="submit"] {
+  background-color: green; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+}
+
+
+label {
+    width: 200px; 
+    display: inline-block;
+    text-align: left;
+    margin-right: 20px;
+}
+
+    
+</style>
+    </head>
+    <body>
+        
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Policy</a>
+        <a href="#">About</a>
+    </nav>
+    <br>
+<h2>POVA NEO 3</h2>
+<div class="gambar-kiri">
+<img src="gambarbarang.jpg" alt="gambar barang" class="gambar-kiri" width="300"> 
+<br>
+<br>
+
+</div>
+
+<table>
+<tr>
+<td>
+    <b><label>Title Here<b/></label></td>
+<td>: <p></p></td>
+                </tr>
+                
+         <tr>
+                    <td>
+                        <b><label for="description">Description</label></b></td>
+                    <td>: <p></p></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <b><label>Total Amount</label></b>
+                        </td>
+                    <td>:<p></p> </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <b><label>Pay to</label></b>
+                        </td>
+                    <td>: <p></p> </td>
+                </tr>
+                <tr>
+            <td>
+                        <b><label for="payment type">Payment Type</label></b></td>
+                    <td>: <select>
+                        <option value="visa">visa debit</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+<td>
+    <b><label for="holder">Account Holder</label></b>
+    </td>
+<td>: <input type="text" id="holder"style="width:250px"></td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <b><label for="Account No">Account No</label></b></td>
+                    <td>: <input type="number" name="" id="Account No" style="width:250px"/>
+     </td>
+                </tr> 
+
+                <tr>
+                    
+                                <td><td><ul style="list-style-type: none;">
+                    <li>    
+                        <input type="checkbox" id="Send To Mobile Phone">
+                        <label for="Send To Mobile Phone">Send To Mobile Phone</label>
+                    </li>
+                   
+                    <li>    
+<input type="checkbox" id="email mel">
+                        <label for="email me"style="width:250px">Email Me Copy Of Transaction</label>
+                    </li>
+
+                </td></td>
+                <tr>
+                    <td>
+                        <b><label for="number">Send To Mobile Phone</label></b>
+                        
+                    </td>
+                    <td>: <input type="number" id="number"style="width:250px"></td>
+                
+                <tr>
+                    <td>
+                        <b><label for="email">Send To Email</label></b>
+                    </td>
+                    <td>: <input type="email" id="email"style="width:250px"></td>
+                </tr>
+            <tr>
+                <td>
+                    <td>
+                        <div>
+                            <input type="submit" name="Pay Using Quidlink" id="Pay Using Quidlink" value="Pay Using Quidlink"/>
+                    
+                </div></td>
+            </tr>
+</table>
+    </body>
+</html>
