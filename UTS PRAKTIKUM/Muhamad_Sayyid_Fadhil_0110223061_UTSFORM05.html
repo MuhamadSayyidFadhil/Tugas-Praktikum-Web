@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Form Praktikum </title>
+</head>
+<style>
+    .nav {
+        text-align: right;
+    }
+    .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+    gap: 100px;
+}
+</style>
+
+<body>
+    <h1 style="text-align: center;">Sistem Informasi Seminar Tugas AKhir - SISTA</h1>
+        <table>
+            <nav class="nav">
+                    <a href="#home">Home</a> -
+                    <a href="#jadwal">Jadwal</a> - 
+                    <a href="#detail jadwal">Detail Jadwal</a> - 
+                    <a href="#daftar peserta">Daftar Peserta</a>
+            </nav>
+            <br>
+
+            <tr>
+                <td>Mahasiswa Seminar : Diego Armando (0102002)</td>
+            </tr>
+
+            <tr>
+                <td>Judul : Rancang Bangun Aplikasi Semniar Tugas Akhir Berbasis Web Menggunakan MVC Fromework</td>
+            </tr>
+
+            <tr>
+                <td>Waktu : Senin, 4 Januari 2021,10:00</td>
+            </tr> 
+            <tr>
+                <td>
+                    <br>
+                    <fieldset style="width: 600px;">
+                        <legend>Form Peserta Seminar</legend>
+                        <form action="hasilpendaftaran">
+                        <table>
+                            <tr>
+                                <td><label for="nim">Nim</label></td>
+                                <td>:<input type="number" name="nim" id="nim"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nama">Nama</label></td>
+                                <td>:<input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="prodi">Prodi</label></td>
+                                <td>:
+                                    <select name="prodi" id="prodi">
+                                        <option value="sistem informasi">Sistem Informasi</option>
+                                        <option value="teknik informatika">Teknik Informatika</option>
+                                        <option value="bisnis digital">Bisnis Digital</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="Program">Program    </label></td>
+
+                                <td>:
+                                    <input type="radio" name="d3" id="d3">D3
+                                </td>
+                                <td>
+                                    <input type="radio" name="s1 reguler" id="s1 reguler">S1 Reguler
+                                </td>
+                                <td>
+                                    <input type="radio" name="s1 fost trackt" id="s1 fost trackt">S1 Fost Trackt
+                                </td>
+                                <td>
+                                    <input type="radio" name="s2" id="s2">S2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Daftar">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
