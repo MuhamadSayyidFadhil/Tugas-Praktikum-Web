@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+</head>
+
+<body>
+    <h1>Menghitung Penjumlahan</h1>
+    <label for="angkapertama">Angka Pertama :</label>
+    <input type="number" name="angkapertama" id="angkapertama" onchange="hitungPenjumlahan()">
+    <h2>+</h2>
+    <label for="angkakedua">Angka Kedua :</label>
+    <input type="number" name="angkakedua" id="angkakedua" onchange="hitungPenjumlahan()">
+    <h2>=</h2>
+
+    <p>Hasil Penjumlahan :<span id="hasil"></span></p>
+
+<script>
+    function hitungPenjumlahan() {
+        let angkaPertama = parseInt(document.getElementById('angkapertama').value) || 0;
+        let angkaKedua = parseInt(document.getElementById('angkakedua').value) || 0;
+        let hasil = angkaPertama + angkaKedua;
+
+        document.getElementById('hasil').innerText = hasil;
+    }
+</script>
+</body>
+
+</html>
